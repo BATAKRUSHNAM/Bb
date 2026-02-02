@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For My BB ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 35px;
+            width: 380px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            color: #ff3f6c;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 30px;
+            background: #ff3f6c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e7335d;
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ff3f6c;
+            animation: pop 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.85);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Congratulations <br><center>My Bb 💖</center></h1>
+
+    <p>
+        You are very special to me ❤️ <br>
+        Haan, tome mo katha bele bele sunoni 😅 <br>
+        lekin jaha bhi hou, tome mor hh🤍 <br>
+        I’m really so happy for you 🌸 <br>
+        Whatever happens, I’ll always be with you, my Bb 💕
+    </p>
+
+    <button onclick="showLove()">Click here 💝</button>
+
+    <div class="message" id="loveText">
+        Always yours 💖 <br>
+        Forever proud of you payel🌟
+    </div>
+</div>
+
+<script>
+    function showLove() {
+        document.getElementById("loveText").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
